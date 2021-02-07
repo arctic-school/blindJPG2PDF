@@ -3,7 +3,7 @@ import os
 import sys
 
 ROOT = os.getcwd()
-folders = [ i for i in os.listdir() if os.path.isdir(i) ]
+folders = [ i for i in os.listdir() if os.path.isdir(i) and i[0] != '.' ]
 
 for folder in folders:
     print(folder)
